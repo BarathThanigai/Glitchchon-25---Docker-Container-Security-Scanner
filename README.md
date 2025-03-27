@@ -10,7 +10,7 @@ This file contains multiple commands that will complete the process of scanning.
 
 Use the following commands based on your use:-
 
-* docker cp C:\Hackathon\test_file.py sample_container:/test_file.py
+* docker cp C:\Hackathon\test_file.py sample_container:/test_file.py \n
 Replace "test_file.py" with your required file for scanning
 "sample_container" is your container name
 
