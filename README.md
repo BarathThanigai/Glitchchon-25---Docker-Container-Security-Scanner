@@ -10,7 +10,7 @@ This file contains multiple commands that will complete the process of scanning.
 
 Use the following commands based on your use:-
 
-* docker cp C:\Hackathon\test_file.py sample_container:/test_file.py \n
+* docker cp C:\Hackathon\test_file.py sample_container:/test_file.py 
 Replace "test_file.py" with your required file for scanning
 "sample_container" is your container name
 
@@ -27,7 +27,8 @@ Use this command to start executing and scanning the "test_file"/or"your_file_na
 After the scanning is done, exit the container run mode. THe "root<id>" should be replaced by "PS C:\WINDOWS\system32>"
 
 * docker cp <container_id>:/Folder_name/scan_report.json C:\Folder_name\
-If you require the log file of the scan/report, enter this command AFTER you have exited the container run mode. Then, head to the folder where you have stored security-scanner.py, and check the "scan_report.json" file. If it works, it should print on powershell - "Successfully copied 21kB to C:\Hackathon\". FIle size of the report can vary.
+If you require the log file of the scan/report, enter this command AFTER you have exited the container run mode. Then, head to the folder where you have stored security-scanner.py, and check the "scan_report.json" file. If it works, it should print on powershell -Successfully copied <size> KB to C:\Folder_name\
+
 
 * Ctrl+C
 The security-scanner.py runs on time intervals that can be changed within the program file itself, around the end of the file. 
